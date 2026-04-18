@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MultiPing</string>
+
+    <!-- Toolbar -->
+    <string name="btn_settings">Settings</string>
+    <string name="btn_language">Language</string>
+    <string name="btn_start">Start monitoring</string>
+    <string name="btn_stop">Stop monitoring</string>
+
+    <!-- Main screen -->
+    <string name="search_hint">🔍  Search by address or name</string>
+    <string name="limit_reached">256 host limit reached</string>
+    <string name="delete_confirm_title">Delete %1$s?</string>
+    <string name="delete_confirm_yes">Delete</string>
+    <string name="cancel">Cancel</string>
+
+    <!-- Add host sheet -->
+    <string name="sheet_title_add">Add host</string>
+    <string name="sheet_title_edit">Edit host</string>
+    <string name="hint_address">Address (IP or domain)</string>
+    <string name="hint_label">Name (optional)</string>
+    <string name="hint_interval">Interval (sec)</string>
+    <string name="hint_timeout">Timeout (sec)</string>
+    <string name="hint_avg_window">Average window (sec), 0 = off</string>
+    <string name="label_curl">HTTP / curl request</string>
+    <string name="btn_save">Save</string>
+    <string name="error_address_empty">Enter an address</string>
+
+    <!-- Host card -->
+    <string name="status_off">off</string>
+    <string name="status_no_response">no response</string>
+    <string name="status_no_data">—</string>
+
+    <!-- Notification -->
+    <string name="notif_channel_monitor_name">MultiPing Monitor</string>
+    <string name="notif_channel_monitor_desc">Persistent host monitoring status</string>
+    <string name="notif_channel_alerts_name">MultiPing Alerts</string>
+    <string name="notif_channel_alerts_desc">Notifications when favourite hosts go offline</string>
+    <string name="notif_title_offline">📵 No network</string>
+    <string name="notif_text_offline">Enable Wi-Fi or mobile data</string>
+    <string name="notif_title_no_internet">⚠️ No internet</string>
+    <string name="notif_text_no_internet">Network connected but no internet access</string>
+    <string name="notif_btn_stop">Stop</string>
+    <string name="notif_alert_title">🔴 %1$s is down</string>
+    <string name="notif_alert_text">Favourite host not responding: %1$s</string>
+    <string name="notif_status_green">All reachable</string>
+    <string name="notif_status_yellow">Partially unreachable</string>
+    <string name="notif_status_red">Unreachable</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_traffic_light">Traffic light thresholds</string>
+    <string name="settings_green">🟢 Green: %1$d%%+</string>
+    <string name="settings_red">🔴 Red: ≤%1$d%%</string>
+    <string name="settings_yellow_note">🟡 Yellow — everything in between</string>
+    <string name="settings_defaults">Default values for new hosts</string>
+    <string name="settings_notification">Notification shade</string>
+    <string name="settings_notification_desc">Show traffic light in status bar</string>
+    <string name="settings_show_on_lock_screen">Show on lock screen</string>
+    <string name="settings_save">Save</string>
+    <string name="settings_saved">Saved</string>
+    <string name="settings_threshold_error">Red threshold must be lower than green</string>
+
+    <!-- Battery settings -->
+    <string name="settings_battery">Battery saving (screen off)</string>
+    <string name="settings_pause_screen_off">Pause when screen is off</string>
+    <string name="settings_pause_screen_off_desc">Stop monitoring when the screen turns off</string>
+    <string name="settings_monitor_favs_screen_off">Poll favourites at set interval</string>
+    <string name="settings_monitor_favs_screen_off_desc">Check favourite hosts even when screen is off</string>
+    <string name="settings_monitor_favs_warning">⚠ Short intervals wake your device more often, increasing battery usage</string>
+    <string name="settings_battery_all_eco">Poll all hosts in power saving mode</string>
+    <string name="settings_battery_all_interval">Poll all hosts at set interval</string>
+
+    <!-- Alert sound -->
+    <string name="settings_alert_sound">Alert sound</string>
+    <string name="settings_alert_sound_desc">Sound for favourite host alerts</string>
+    <string name="alert_sound_default">Default</string>
+    <string name="alert_sound_none">Silent</string>
+    <string name="alert_sound_choose">Choose ringtone…</string>
+    <string name="alert_sound_custom">Custom</string>
+
+    <!-- Language dialog -->
+    <string name="lang_dialog_title">Язык / Language</string>
+
+    <!-- Donate -->
+    <string name="donate_text">Hey, I made this app.\n\nIf you use it — that\'s already a reward for me. If you liked it, I\'d be happy if you spent a moment on a donation. And if you don\'t like it, you\'re probably not reading this. Ha-ha.\n\nFor questions and suggestions, feel free to write. I appreciate feedback.\nGameLv@yandex.ru\n\n———————————————————\n\n🌐  Network: Solana (SOL)\n💳  Address:\n8cLtFdK5Giz27TpUv48GMEUcNXsXJbzchiUMsS4R8UvG\n💵  Currency: USDT\n\n———————————————————\n\nDonation for the good cause.</string>
+    <string name="donate_close_btn">Come back soon</string>
+
+    <!-- HTTP methods -->
+    <string-array name="http_methods">
+        <item>GET</item>
+        <item>HEAD</item>
+        <item>POST</item>
+    </string-array>
+    <string name="ping_ms">%1$d ms</string>
+    <string name="ping_avg">x̅ %1$d ms</string>
+    <!-- TCP check mode -->
+    <string name="label_check_mode">Check type</string>
+    <string name="hint_tcp_port">TCP port</string>
+    <string name="check_mode_ping">ICMP Ping</string>
+    <string name="check_mode_http">HTTP request</string>
+    <string name="check_mode_tcp">TCP connect</string>
+</resources>

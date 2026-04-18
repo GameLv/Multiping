@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="20dp">
+
+        <!-- ══ УВЕДОМЛЕНИЕ ══════════════════════════════════════════════ -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="@string/settings_notification" android:textSize="16sp"
+            android:textStyle="bold" android:layout_marginBottom="8dp" />
+
+        <!-- Показывать светофор -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="52dp"
+            android:orientation="horizontal" android:gravity="center_vertical"
+            android:paddingHorizontal="12dp" android:background="@drawable/bg_battery_option"
+            android:layout_marginBottom="8dp">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:text="@string/settings_notification_desc"
+                android:textSize="14sp" />
+            <Switch android:id="@+id/swShowNotification"
+                android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!-- Показывать на экране блокировки -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="52dp"
+            android:orientation="horizontal" android:gravity="center_vertical"
+            android:paddingHorizontal="12dp" android:background="@drawable/bg_battery_option"
+            android:layout_marginBottom="20dp">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:text="@string/settings_show_on_lock_screen"
+                android:textSize="14sp" />
+            <Switch android:id="@+id/swShowOnLockScreen"
+                android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <View android:layout_width="match_parent" android:layout_height="1dp"
+            android:background="@color/divider" android:layout_marginBottom="20dp"/>
+
+        <!-- ══ БАТАРЕЯ ════════════════════════════════════════════════ -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="@string/settings_battery" android:textSize="16sp"
+            android:textStyle="bold" android:layout_marginBottom="16dp" />
+
+        <!-- 1: Опрос всех в режиме энергосбережения (дефолт) -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="52dp"
+            android:orientation="horizontal" android:gravity="center_vertical"
+            android:paddingHorizontal="12dp" android:background="@drawable/bg_battery_option"
+            android:layout_marginBottom="8dp">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:text="@string/settings_battery_all_eco"
+                android:textSize="14sp" />
+            <Switch android:id="@+id/swBatteryAllEco"
+                android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!-- 2: Пауза при выключенном экране -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="52dp"
+            android:orientation="horizontal" android:gravity="center_vertical"
+            android:paddingHorizontal="12dp" android:background="@drawable/bg_battery_option"
+            android:layout_marginBottom="8dp">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:text="@string/settings_pause_screen_off"
+                android:textSize="14sp" />
+            <Switch android:id="@+id/swPauseOnScreenOff"
+                android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!-- 3: Опрос избранных по интервалу -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="52dp"
+            android:orientation="horizontal" android:gravity="center_vertical"
+            android:paddingHorizontal="12dp" android:background="@drawable/bg_battery_option"
+            android:layout_marginBottom="8dp">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:text="@string/settings_monitor_favs_screen_off"
+                android:textSize="14sp" />
+            <Switch android:id="@+id/swMonitorFavsScreenOff"
+                android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!-- 4: Опрос всех по интервалу -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="52dp"
+            android:orientation="horizontal" android:gravity="center_vertical"
+            android:paddingHorizontal="12dp" android:background="@drawable/bg_battery_option"
+            android:layout_marginBottom="4dp">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:text="@string/settings_battery_all_interval"
+                android:textSize="14sp" />
+            <Switch android:id="@+id/swBatteryAllInterval"
+                android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!-- Предупреждение батареи -->
+        <TextView android:id="@+id/tvFavsWarning"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/settings_monitor_favs_warning"
+            android:textColor="@color/warning_text" android:textSize="12sp"
+            android:layout_marginTop="4dp" android:layout_marginBottom="4dp"
+            android:visibility="gone" />
+
+        <View android:layout_width="match_parent" android:layout_height="1dp"
+            android:background="@color/divider" android:layout_marginVertical="20dp"/>
+
+        <!-- ══ ЗВУК АЛЕРТА ═══════════════════════════════════════════════ -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="@string/settings_alert_sound" android:textSize="16sp"
+            android:textStyle="bold" android:layout_marginBottom="12dp" />
+
+        <!-- Текущий выбранный звук -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="52dp"
+            android:orientation="horizontal" android:gravity="center_vertical"
+            android:paddingHorizontal="12dp" android:background="@drawable/bg_battery_option"
+            android:layout_marginBottom="8dp">
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:orientation="vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="@string/settings_alert_sound_desc"
+                    android:textSize="14sp" />
+                <TextView android:id="@+id/tvCurrentSound"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="@string/alert_sound_default"
+                    android:textSize="12sp" android:textColor="@color/text_hint" />
+            </LinearLayout>
+            <Button android:id="@+id/btnChooseSound"
+                android:layout_width="wrap_content" android:layout_height="36dp"
+                android:text="@string/alert_sound_choose"
+                android:textSize="12sp"
+                style="@style/Widget.Material3.Button.OutlinedButton" />
+        </LinearLayout>
+
+        <!-- ══ СВЕТОФОР ════════════════════════════════════════════════ -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="@string/settings_traffic_light" android:textSize="16sp"
+            android:textStyle="bold" android:layout_marginBottom="12dp" />
+
+        <TextView android:id="@+id/tvGreenValue" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:textSize="14sp" />
+        <SeekBar android:id="@+id/sbGreenThreshold" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginTop="4dp"
+            android:layout_marginBottom="16dp" android:max="100" />
+
+        <TextView android:id="@+id/tvRedValue" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:textSize="14sp" />
+        <SeekBar android:id="@+id/sbRedThreshold" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp" android:max="100" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="@string/settings_yellow_note" android:textColor="@color/text_hint"
+            android:textSize="12sp" android:layout_marginBottom="24dp" />
+
+        <!-- ══ ЗНАЧЕНИЯ ПО УМОЛЧАНИЮ ═══════════════════════════════════ -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="@string/settings_defaults" android:textSize="16sp"
+            android:textStyle="bold" android:layout_marginBottom="12dp" />
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:hint="@string/hint_interval"
+                android:layout_marginEnd="6dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etDefInterval" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:hint="@string/hint_timeout">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etDefTimeout" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="@string/hint_avg_window"
+            android:layout_marginTop="8dp" android:layout_marginBottom="16dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etDefAvgWindow" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/label_check_mode"
+            android:textSize="13sp" android:textColor="@color/text_secondary"
+            android:layout_marginBottom="4dp" />
+
+        <RadioGroup android:id="@+id/rgDefCheckMode"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:layout_marginBottom="32dp">
+
+            <RadioButton android:id="@+id/rbDefPing"
+                android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:text="PING" />
+
+            <RadioButton android:id="@+id/rbDefHttp"
+                android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:text="HTTP" />
+
+            <RadioButton android:id="@+id/rbDefTcp"
+                android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:text="TCP" />
+
+        </RadioGroup>
+
+        <Button android:id="@+id/btnSaveSettings" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:text="@string/settings_save" />
+
+    </LinearLayout>
+</ScrollView>

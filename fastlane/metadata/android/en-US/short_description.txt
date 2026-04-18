@@ -1,0 +1,1 @@
+Monitor up to 256 hosts with a traffic-light notification. No ads, no trackers.

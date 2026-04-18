@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_dialog">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tvDonateText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textIsSelectable="true"
+            android:textSize="13sp"
+            android:textColor="#EEEEEE"
+            android:lineSpacingMultiplier="1.2"
+            android:text="@string/donate_text" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btnCloseDonate"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:text="@string/donate_close_btn"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="@drawable/bg_btn_donate_close"
+        android:clickable="true"
+        android:focusable="true" />
+
+</LinearLayout>

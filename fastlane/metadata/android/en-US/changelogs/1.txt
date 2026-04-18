@@ -1,0 +1,11 @@
+Initial release.
+
+• Monitor up to 256 hosts with ICMP ping or HTTP check
+• Traffic light notification (green/yellow/red) with online counter
+• Per-host interval, timeout and rolling average settings
+• Favourite hosts with push alerts and custom alert sound
+• Network state detection — no false alerts when offline
+• Battery saving modes for screen-off operation
+• Adaptive poll interval for unresponsive hosts
+• Auto-start after device reboot
+• 12 languages including Arabic (RTL)

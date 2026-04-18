@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Левая ракетка Pong — вертикальный прямоугольник -->
+    <path android:fillColor="#FFFFFF"
+        android:pathData="M24,22 L36,22 L36,62 L24,62 Z"/>
+
+    <!-- Мячик Pong — квадрат по центру, чуть смещён вправо и вниз -->
+    <path android:fillColor="#FFFFFF"
+        android:pathData="M48,48 L60,48 L60,60 L48,60 Z"/>
+
+    <!-- Правая ракетка Pong — вертикальный прямоугольник, ниже левой -->
+    <path android:fillColor="#FFFFFF"
+        android:pathData="M72,46 L84,46 L84,86 L72,86 Z"/>
+
+</vector>

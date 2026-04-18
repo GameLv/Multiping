@@ -1,0 +1,31 @@
+# Built outputs
+*.apk
+*.aar
+*.aab
+*.ap_
+
+# Gradle
+.gradle/
+build/
+**/build/
+
+# Local config — НЕ коммитим, у каждого свой путь к SDK
+local.properties
+
+# Android Studio / IntelliJ
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Keystore — НИКОГДА не коммитим
+*.jks
+*.keystore
+release/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

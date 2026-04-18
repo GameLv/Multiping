@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Дублируем — на случай если система всё же подхватит values-night -->
+    <style name="Theme.MultiPing" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="colorPrimary">#6C47FF</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorPrimaryVariant">#5533CC</item>
+        <item name="colorSecondary">#03DAC5</item>
+        <item name="colorOnSecondary">#000000</item>
+        <item name="colorSurface">#FF1E1E1E</item>
+        <item name="colorOnSurface">#FFEEEEEE</item>
+        <item name="android:statusBarColor">#1A1A2E</item>
+        <item name="android:navigationBarColor">#FF121212</item>
+        <item name="android:windowBackground">#FF121212</item>
+    </style>
+</resources>

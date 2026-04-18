@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MultiPing</string>
+
+    <!-- Toolbar -->
+    <string name="btn_settings">Настройки</string>
+    <string name="btn_language">Язык</string>
+    <string name="btn_start">Запустить мониторинг</string>
+    <string name="btn_stop">Остановить мониторинг</string>
+
+    <!-- Main screen -->
+    <string name="search_hint">🔍  Поиск по адресу или названию</string>
+    <string name="limit_reached">Лимит 256 хостов достигнут</string>
+    <string name="delete_confirm_title">Удалить %1$s?</string>
+    <string name="delete_confirm_yes">Удалить</string>
+    <string name="cancel">Отмена</string>
+
+    <!-- Add host sheet -->
+    <string name="sheet_title_add">Добавить хост</string>
+    <string name="sheet_title_edit">Редактировать хост</string>
+    <string name="hint_address">Адрес (IP или домен)</string>
+    <string name="hint_label">Название (необязательно)</string>
+    <string name="hint_interval">Интервал (сек)</string>
+    <string name="hint_timeout">Таймаут (сек)</string>
+    <string name="hint_avg_window">Среднее за время (сек), 0 = выкл</string>
+    <string name="label_curl">HTTP / curl запрос</string>
+    <string name="btn_save">Сохранить</string>
+    <string name="error_address_empty">Введите адрес</string>
+
+    <!-- Host card -->
+    <string name="status_off">выкл</string>
+    <string name="status_no_response">нет ответа</string>
+    <string name="status_no_data">—</string>
+
+    <!-- Notification -->
+    <string name="notif_channel_monitor_name">MultiPing Monitor</string>
+    <string name="notif_channel_monitor_desc">Постоянный статус мониторинга хостов</string>
+    <string name="notif_channel_alerts_name">MultiPing Алерты</string>
+    <string name="notif_channel_alerts_desc">Уведомления о недоступности избранных хостов</string>
+    <string name="notif_title_offline">📵 Нет сети</string>
+    <string name="notif_text_offline">Включите Wi-Fi или мобильный интернет</string>
+    <string name="notif_title_no_internet">⚠️ Нет интернета</string>
+    <string name="notif_text_no_internet">Сеть подключена, но интернета нет</string>
+    <string name="notif_btn_stop">Стоп</string>
+    <string name="notif_alert_title">🔴 %1$s недоступен</string>
+    <string name="notif_alert_text">Избранный хост не отвечает: %1$s</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Настройки</string>
+    <string name="settings_traffic_light">Пороги светофора</string>
+    <string name="settings_green">🟢 Зелёный: %1$d%%+</string>
+    <string name="settings_red">🔴 Красный: ≤%1$d%%</string>
+    <string name="settings_yellow_note">🟡 Жёлтый — всё, что между ними</string>
+    <string name="settings_defaults">Значения по умолчанию для новых хостов</string>
+    <string name="settings_notification">Уведомление в шторке</string>
+    <string name="settings_notification_desc">Показывать светофор в строке состояния</string>
+    <string name="settings_save">Сохранить</string>
+    <string name="settings_saved">Сохранено</string>
+    <string name="settings_threshold_error">Порог красного должен быть меньше зелёного</string>
+
+    <!-- Language dialog -->
+    <string name="lang_dialog_title">Язык / Language</string>
+
+    <!-- HTTP methods -->
+    <string-array name="http_methods">
+        <item>GET</item>
+        <item>HEAD</item>
+        <item>POST</item>
+    </string-array>
+    <string name="notif_status_green">Все доступны</string>
+    <string name="notif_status_yellow">Частично недоступны</string>
+    <string name="notif_status_red">Недоступны</string>
+
+    <!-- Battery settings -->
+    <string name="settings_battery">Экономия батареи</string>
+    <string name="settings_pause_screen_off">Пауза при выключенном экране</string>
+    <string name="settings_pause_screen_off_desc">Останавливать мониторинг когда экран выключен</string>
+    <string name="settings_monitor_favs_screen_off">Постоянный мониторинг избранного</string>
+    <string name="settings_monitor_favs_screen_off_desc">Проверять избранные хосты даже при выключенном экране</string>
+    <string name="settings_monitor_favs_warning">⚠ Малые интервалы чаще будят ваше устройство, увеличивая расход батареи</string>
+    <string name="settings_battery_all_eco">Опрос всех хостов в режиме энергосбережения</string>
+    <string name="settings_battery_all_interval">Опрос всех по указанному интервалу</string>
+    <string name="settings_show_on_lock_screen">Показывать на экране блокировки</string>
+    <string name="donate_text">Привет, я сделал это приложение.\n\nЕсли вы им пользуетесь — это уже награда для меня. Если вам понравилось, буду рад если вы потратите своё время на донат. А если не нравится, вы вероятнее всего это не читаете. Ахах.\n\nПо вопросам и предложениям, пишите. Буду рад обратной связи.\nGameLv@yandex.ru\n\n───────────────────\n\n🌐  Сеть: Solana (SOL)\n💳  Адрес:\n8cLtFdK5Giz27TpUv48GMEUcNXsXJbzchiUMsS4R8UvG\n💵  Валюта: USDT\n\n───────────────────\n\nДонат, на резинку для трусов.</string>
+    <string name="donate_close_btn">Заходите ещё</string>
+    <!-- Alert sound -->
+    <string name="settings_alert_sound">Звук алерта</string>
+    <string name="settings_alert_sound_desc">Звук уведомления для избранных хостов</string>
+    <string name="alert_sound_default">По умолчанию</string>
+    <string name="alert_sound_none">Без звука</string>
+    <string name="alert_sound_choose">Выбрать мелодию…</string>
+    <string name="alert_sound_custom">Своя мелодия</string>
+    <string name="ping_ms">%1$d мс</string>
+    <string name="ping_avg">x̅ %1$d мс</string>
+    <!-- TCP check mode -->
+    <string name="label_check_mode">Тип проверки</string>
+    <string name="hint_tcp_port">TCP порт</string>
+    <string name="check_mode_ping">ICMP Ping</string>
+    <string name="check_mode_http">HTTP запрос</string>
+    <string name="check_mode_tcp">TCP соединение</string>
+</resources>

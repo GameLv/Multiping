@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Адаптивные цвета (тёмная тема) -->
+    <color name="text_primary">#FFEEEEEE</color>
+    <color name="text_secondary">#FFAAAAAA</color>
+    <color name="text_hint">#FF888888</color>
+    <color name="text_on_dark">#FFFFFFFF</color>
+    <color name="surface">#FF1E1E1E</color>
+    <color name="surface_variant">#FF2A2A2A</color>
+    <color name="chip_background">#FF2A2A2A</color>
+    <color name="chip_text">#FFDDDDDD</color>
+    <color name="toolbar_text">#FFFFFFFF</color>
+    <color name="card_background">#FF1E1E1E</color>
+    <color name="search_background">#1AFFFFFF</color>
+    <color name="search_hint">#FF888888</color>
+    <color name="divider">#33FFFFFF</color>
+    <color name="battery_option_bg">#1AFFFFFF</color>
+    <color name="warning_text">#FFFF9800</color>
+    <color name="settings_btn_bg">#22FFFFFF</color>
+    <color name="settings_btn_border">#44FFFFFF</color>
+</resources>

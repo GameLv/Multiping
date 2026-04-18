@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:background="#1A1A2E"
+        app:liftOnScroll="false"
+        app:elevation="0dp">
+
+        <!-- Шапка -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="12dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_name"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF" />
+
+                <ImageView
+                    android:id="@+id/btnDonate"
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:src="@drawable/ic_coffee"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="2dp"
+                    android:contentDescription="Донат" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/btnStartStop"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/ic_stop_square"
+                android:background="@drawable/bg_toolbar_btn"
+                android:padding="6dp"
+                android:contentDescription="@string/btn_stop"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/btnSettings"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/ic_settings"
+                android:background="@drawable/bg_toolbar_btn"
+                android:padding="6dp"
+                android:contentDescription="@string/btn_settings"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/btnLanguage"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/ic_language"
+                android:background="@drawable/bg_toolbar_btn"
+                android:padding="6dp"
+                android:contentDescription="@string/btn_language" />
+        </LinearLayout>
+
+        <!-- Поиск -->
+        <EditText
+            android:id="@+id/etSearch"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/bg_search_toolbar"
+            android:paddingHorizontal="12dp"
+            android:hint="@string/search_hint"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#AAFFFFFF"
+            android:textSize="14sp"
+            android:inputType="text"
+            android:imeOptions="actionSearch"
+            android:singleLine="true" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvHosts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:paddingBottom="80dp"
+        android:clipToPadding="false" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:contentDescription="Добавить хост"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

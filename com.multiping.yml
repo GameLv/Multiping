@@ -1,0 +1,40 @@
+Categories:
+  - Internet
+  - System
+
+License: MIT
+
+AuthorName: GameLv
+AuthorEmail: GameLv@yandex.ru
+
+SourceCode: https://github.com/GameLv/Multiping
+IssueTracker: https://github.com/GameLv/Multiping/issues
+Changelog: https://github.com/GameLv/Multiping/releases
+
+AutoName: MultiPing
+Summary: Monitor up to 256 hosts with a traffic-light notification
+Description: |-
+  MultiPing is a free and open-source network monitoring app.
+  Add up to 256 hosts and monitor their availability in the background.
+
+  Features traffic light status notification, push alerts for favourite hosts,
+  battery saving modes, and 12 languages.
+
+  No ads, no trackers, no Google Play Services.
+
+RepoType: git
+Repo: https://github.com/GameLv/Multiping
+
+Builds:
+  - versionName: '1.0.0'
+    versionCode: 1
+    commit: v1.0.0
+    subdir: app
+    gradle:
+      - yes
+    prebuild: chmod +x ../gradlew
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags ^v[0-9]+\.[0-9]+\.[0-9]+$
+CurrentVersion: '1.0.0'
+CurrentVersionCode: 1

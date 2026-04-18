@@ -1,0 +1,30 @@
+MultiPing is a free and open-source network monitoring app. Add up to 256 hosts (IP addresses or domain names) and monitor their availability continuously in the background.
+
+FEATURES
+
+• Monitor up to 256 hosts simultaneously
+• Traffic light status in notification shade: 🟢 green / 🟡 yellow / 🔴 red
+• Online counter showing reachable hosts (e.g. 28/160)
+• Two check modes per host: ICMP Ping or HTTP request (GET, HEAD, POST)
+• Per-host settings: check interval and timeout
+• Rolling average response time display
+• Favourite hosts with instant push alerts on failure
+• Alert sound customization — choose any system ringtone or go silent
+• Network awareness: detects Wi-Fi and mobile data state
+• "No internet" notification when offline instead of traffic light
+• Battery saving modes for screen-off: pause, power-saving poll, favourite-only monitoring
+• Adaptive poll interval — backs off automatically for unresponsive hosts
+• Auto-restarts after device reboot
+• Full search by address or hostname
+• 12 languages: Russian, English, German, French, Spanish, Portuguese, Chinese, Korean, Japanese, Bashkir, Kazakh, Arabic
+
+PRIVACY
+
+• No ads, no trackers, no analytics
+• No Google Play Services or Firebase
+• All data stored locally on device
+• No network calls except to hosts you configure
+
+OPEN SOURCE
+
+Licensed under MIT. Source code available on GitHub.
