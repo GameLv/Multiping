@@ -50,6 +50,10 @@
 - Android 8.0+ (API 26)
 - No special permissions beyond what's listed in `AndroidManifest.xml`
 
+## Link to download the .apk file from GitHub
+
+.apk https://github.com/GameLv/Multiping/releases/download/v4.1.0/MultiPing.apk
+
 ## Building
 
 ```bash
