@@ -54,6 +54,22 @@
 
 .apk https://github.com/GameLv/Multiping/releases/download/v4.1.0/MultiPing.apk
 
+## Screens
+
+<table style="border: hidden; border-spacing: 0; background: transparent; width: auto;">
+  <tr style="border: hidden;">
+    <td style="border: hidden; padding: 0;">
+      <img width="270" height="600" alt="Screenshot_20260418-162113" src="https://github.com/user-attachments/assets/a079b362-e028-4486-a92e-bbcfd96d2153" />
+    </td>
+    <td style="border: hidden; padding: 0;">
+      <img width="270" height="600" alt="Screenshot_20260418-162040" src="https://github.com/user-attachments/assets/29c9fbc0-18e2-4fbd-a58c-7840dbdaef23" />
+    </td>
+    <td style="border: hidden; padding: 0;">
+      <img width="270" height="600" alt="Screenshot_20260418-162049" src="https://github.com/user-attachments/assets/c5ce8fb4-2d32-4070-b66a-6067cb3bea84" />
+    </td>
+  </tr>
+</table>
+
 ## Building
 
 ```bash
