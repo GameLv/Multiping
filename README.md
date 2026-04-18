@@ -19,22 +19,36 @@
 
 ## Features
 
-- Monitor up to **256 hosts** simultaneously (IP or domain)
-- **Traffic light** in notification shade — 🟢 green / 🟡 yellow / 🔴 red
-- Online counter: `28/160`
-- Two check modes per host: **ICMP Ping** or **HTTP** (GET, HEAD, POST)
-- Per-host: interval, timeout, rolling average window
-- **Favourite hosts** with push alerts on failure
+## Monitoring
+
+- Up to **256 hosts** simultaneously (IP or domain)
+- Three check modes per host: **ICMP Ping, HTTP (GET, HEAD, POST), or TCP Connect (custom port)**
+- **Per-host settings: check interval, timeout, rolling average window**
+- Adaptive backoff — check interval increases automatically for unresponsive hosts
+- Countdown to next check shown on each host card
+
+## Alerts
+
+- Traffic light in notification shade — 🟢 green / 🟡 yellow / 🔴 red
+- Mark any host as Favourite to get a **push notification** when it goes down
 - **Custom alert sound** — any system ringtone or silent
-- Network awareness — no false alerts when offline
-- **Battery saving** modes for screen-off:
-  - Power-saving WorkManager poll
-  - Favourites-only Foreground Service
-  - Full pause
-- Adaptive backoff interval for unresponsive hosts
-- Auto-start after reboot
+- **No false alerts** when the network is offline — the app detects the difference between "host unreachable" and "no internet"
+
+## Battery & background
+
+- **Four screen-off modes:**
+  - power-saving WorkManager poll
+  - favourites-only foreground service
+  - full pause
+  - all foreground service
+- Auto-restart after device reboot
+- WakeLock only while actively checking
+
+## Interface
+
 - Search by address or name
-- **12 languages** including Arabic (RTL)
+- Dark theme only
+- 12 languages: Russian, English, German, French, Spanish, Portuguese, Chinese, Korean, Japanese, Bashkir, Kazakh, Arabic (RTL)
 
 ## Privacy
 
